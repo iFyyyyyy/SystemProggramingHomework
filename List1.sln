@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Homework1Task1", "WinFormsApp1\Homework1Task1.csproj", "{02E79E74-4E86-4B36-9509-441432992358}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Homework1Task1", "WinFormsApp1\Homework1Task1.csproj", "{02E79E74-4E86-4B36-9509-441432992358}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task1Library", "ClassLibrary1\Task1Library.csproj", "{7FB8F482-E01F-42C2-8F56-E13472D66D89}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Task1Library", "ClassLibrary1\Task1Library.csproj", "{7FB8F482-E01F-42C2-8F56-E13472D66D89}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestForLibrary", "TestForLibrary\TestForLibrary.csproj", "{C034C098-4E32-470D-9860-DAD940BDBF6A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{7FB8F482-E01F-42C2-8F56-E13472D66D89}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7FB8F482-E01F-42C2-8F56-E13472D66D89}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7FB8F482-E01F-42C2-8F56-E13472D66D89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C034C098-4E32-470D-9860-DAD940BDBF6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C034C098-4E32-470D-9860-DAD940BDBF6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C034C098-4E32-470D-9860-DAD940BDBF6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C034C098-4E32-470D-9860-DAD940BDBF6A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

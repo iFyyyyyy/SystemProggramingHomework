@@ -1,0 +1,67 @@
+﻿<Window x:Class="ServiceCenterApp.AddDetailsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ServiceCenterApp"
+        mc:Ignorable="d"
+        Title="Добавить деталь" Height="237" Width="820" MinHeight="237" MinWidth="820" ResizeMode="NoResize">
+    <Window.Resources>
+        <Style x:Key="BlackAndWhite">
+        <Setter Property="Control.FontFamily" Value="Arial Black" />
+        <Setter Property="Control.Background" >
+            <Setter.Value>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF5AFF00" Offset="1"/>
+                </LinearGradientBrush>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Control.Foreground" Value="White" />
+        <Setter Property="Control.Margin" Value="10" />
+    </Style>
+
+       
+    </Window.Resources>
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF00D6FF"/>
+                <GradientStop Color="#FF8AFF04" Offset="1"/>
+                <GradientStop Color="#FF2DE3AC" Offset="0.329"/>
+                <GradientStop Color="#FF2DE3AC" Offset="0.329"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <StackPanel>
+            <Grid>
+                <Label Content="ID Детали:" Margin="0,0,635,0" HorizontalAlignment="Left"/>
+                <TextBox x:Name="txbx_ID_Detail" IsReadOnly="True" TextWrapping="Wrap" Margin="160,0,225,0"/>
+                <Label Content="" Margin="570,0,0,0" HorizontalAlignment="Right" Width="220"/>
+
+            </Grid>
+            <Grid Margin="0,10,0,0">
+                <Label Content="Название детали:" Margin="0,0,635,0" HorizontalAlignment="Left"/>
+                <TextBox x:Name="txbx_Name_Detail" TextWrapping="Wrap"  Margin="160,0,225,0" SelectionChanged="txbx_Name_Detail_SelectionChanged"/>
+                <Label x:Name="lb_Name" Content="" Margin="570,0,0,0" HorizontalAlignment="Right" Width="220"/>
+            </Grid>
+            <Grid Margin="0,10,0,0">
+                <Label Content="Цена:" Margin="0,0,635,0" HorizontalAlignment="Left"/>
+                <TextBox x:Name="txbx_Unit_Price" TextWrapping="Wrap" Margin="160,0,225,0" SelectionChanged="txbx_Unit_Price_SelectionChanged"/>
+                <Label x:Name="lb_UnitPrice" Content="" Margin="570,0,0,0" HorizontalAlignment="Right" Width="220"/>
+            </Grid>
+            <Grid Margin="0,10,0,0">
+                <Label Content="Количество:" Margin="0,0,635,0" HorizontalAlignment="Left"/>
+                <TextBox x:Name="txbx_Quantity" TextWrapping="Wrap" Margin="160,0,225,0" SelectionChanged="txbx_Quantity_SelectionChanged"/>
+                <Label x:Name="lb_Quantity" Content="" Margin="570,0,0,0" HorizontalAlignment="Right" Width="220"/>
+            </Grid>
+            <Grid Margin="0,10,0,0">
+                <Label Content="Итоговая цена:" Margin="0,0,635,0" HorizontalAlignment="Left"/>
+                <TextBox x:Name="txbx_FullPrice" IsReadOnly="True" TextWrapping="Wrap" Margin="160,0,225,0"/>
+                <Label x:Name="lb_FullPrice" Content="" Margin="570,0,0,0" HorizontalAlignment="Right" Width="220"/>
+            </Grid>
+            <Grid Margin="0,10,0,0">
+                <Button x:Name="btn_Add_Details" IsEnabled="False" Style="{StaticResource BlackAndWhite}" Content="Добавить деталь" Margin="160,0,225,0" Click="btn_Add_Details_Click"/>
+            </Grid>
+        </StackPanel>
+    </Grid>
+</Window>

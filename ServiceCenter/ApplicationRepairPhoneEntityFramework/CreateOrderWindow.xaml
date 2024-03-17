@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ServiceCenterApp"
         mc:Ignorable="d"
-        Title="Добавить заказ" Height="1750" Width="890">
+        Title="Добавить заказ" Height="1750" Width="890" WindowState="Maximized">
     <Window.Resources>
         <Style x:Key="BlackAndWhite">
         <Setter Property="Control.FontFamily" Value="Arial Black" />

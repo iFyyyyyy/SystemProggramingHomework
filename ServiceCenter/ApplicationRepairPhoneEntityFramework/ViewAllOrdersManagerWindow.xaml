@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ServiceCenterApp"
         mc:Ignorable="d"
-        Title="Просмотр заказов менеджером" WindowStartupLocation="CenterScreen" Height="623" Width="1668" >
+        Title="Просмотр заказов менеджером" WindowStartupLocation="CenterScreen" Height="623" Width="1668" WindowState="Maximized" >
     <Window.Resources>
         <Style x:Key="BlackAndWhite">
         <Setter Property="Control.FontFamily" Value="Arial Black" />
